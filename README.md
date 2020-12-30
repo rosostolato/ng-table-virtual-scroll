@@ -1,11 +1,13 @@
-# Virtual Scroll for Angular Material Table
+# Virtual Scroll for Angular Cdk Table
 
-An Angular Directive, which allow to use [virtual scrolling](https://material.angular.io/cdk/scrolling) in [mat-table](https://material.angular.io/components/table)
+An Angular Directive, which allow to use [virtual scrolling](https://material.angular.io/cdk/scrolling) in [cdk-table](https://material.angular.io/components/table)
 
 [![npm](https://img.shields.io/badge/demo-online-ed1c46.svg)](https://diprokon.github.io/ng-table-virtual-scroll)
 [![npm](https://img.shields.io/npm/v/ng-table-virtual-scroll.svg?maxAge=2592000?style=plastic)](https://www.npmjs.com/package/ng-table-virtual-scroll)
 ![Travis (.org) branch](https://img.shields.io/travis/diprokon/ng-table-virtual-scroll/master)
 [![npm](https://img.shields.io/npm/l/express.svg?maxAge=2592000)](/LICENSE.txt)
+
+This library is a fork of [ng-table-virtual-scroll](https://github.com/diprokon/ng-table-virtual-scroll)
 
 ## Table of Contents
 
@@ -22,7 +24,7 @@ An Angular Directive, which allow to use [virtual scrolling](https://material.an
 **NPM**
 
 ```bash
-$ npm install -save ng-table-virtual-scroll
+$ npm install -save ng-cdk-table-virtual-scroll
 ```
 
 <a name="usage"/>
@@ -32,7 +34,7 @@ $ npm install -save ng-table-virtual-scroll
 ### Import `TableVirtualScrollModule`
 
 ```ts
-import { TableVirtualScrollModule } from 'ng-table-virtual-scroll';
+import { TableVirtualScrollModule } from 'ng-cdk-table-virtual-scroll';
 
 @NgModule({
   imports: [
@@ -54,7 +56,7 @@ used as the data source for the `mat-table`
 **Note: without `TableVirtualScrollDataSource` the directive won't work**
 
 ```ts
-import { TableVirtualScrollDataSource } from 'ng-table-virtual-scroll';
+import { TableVirtualScrollDataSource } from 'ng-cdk-table-virtual-scroll';
 
 @Component({...})
 export class MyComponent {
@@ -103,4 +105,4 @@ $ npm run build:lib ng-table-virtual-scroll
 
 ## Issues
 
-If you identify any errors in the library, or have an idea for an improvement, please open an [issue](https://github.com/diprokon/ng-table-virtual-scroll/issues).
+If you identify any errors in the library, or have an idea for an improvement, please open an [issue](https://github.com/rosostolato/ng-table-virtual-scroll/issues).

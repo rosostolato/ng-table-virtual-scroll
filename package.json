@@ -1,18 +1,18 @@
 {
-  "name": "ng-table-virtual-scroll",
-  "version": "1.3.4",
-  "description": "Virtual scroll for for Angular Material Table",
-  "homepage": "https://github.com/diprokon/ng-table-virtual-scroll",
+  "name": "ng-cdk-table-virtual-scroll",
+  "version": "1.0.0",
+  "description": "Virtual scroll for for Angular Cdk Table",
+  "homepage": "https://github.com/rosostolato/ng-table-virtual-scroll",
   "author": {
     "name": "Dmytro Prokhorov",
     "url": "https://github.com/diprokon"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/diprokon/ng-table-virtual-scroll.git"
+    "url": "git://github.com/rosostolato/ng-table-virtual-scroll.git"
   },
   "bugs": {
-    "url": "https://github.com/diprokon/ng-table-virtual-scroll/issues"
+    "url": "https://github.com/rosostolato/ng-table-virtual-scroll/issues"
   },
   "keywords": [
     "angular",
