@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
-import { TableItemSizeDirective } from './table-item-size.directive';
 
+import { TableItemSizeDirective } from './table-item-size.directive';
 
 @NgModule({
   declarations: [TableItemSizeDirective],
+  exports: [TableItemSizeDirective],
   imports: [],
-  exports: [TableItemSizeDirective]
 })
-export class TableVirtualScrollModule {
-}
+export class TableVirtualScrollModule {}

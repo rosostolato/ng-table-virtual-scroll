@@ -1,9 +1,9 @@
 import { TestBed } from '@angular/core/testing';
 import { TableVirtualScrollDataSource } from './table-data-source';
-import { MatTableDataSource } from '@angular/material/table';
 import { Subject } from 'rxjs';
 import { ListRange } from '@angular/cdk/collections';
 import { map, switchMap } from 'rxjs/operators';
+import { DataSource } from '@angular/cdk/table';
 
 interface TestData {
   index: number;
@@ -27,7 +27,7 @@ describe('TableVirtualScrollDataSource', () => {
 
   it('should extend MatTableDataSource', () => {
     const dataSource: TableVirtualScrollDataSource<TestData> = new TableVirtualScrollDataSource<TestData>();
-    expect(dataSource instanceof MatTableDataSource).toBeTruthy();
+    expect(dataSource instanceof DataSource).toBeTruthy();
   });
 
   it('should have reaction on dataOfRange$ changes', () => {
