@@ -1,6 +1,6 @@
 {
   "name": "ng-cdk-table-virtual-scroll",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Virtual scroll for for Angular Cdk Table",
   "homepage": "https://github.com/rosostolato/ng-table-virtual-scroll",
   "author": {
@@ -73,6 +73,6 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
-    "typescript": "~3.8.3"
+    "typescript": "~3.6.4"
   }
 }

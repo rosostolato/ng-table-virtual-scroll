@@ -74,7 +74,9 @@ export class TableVirtualScrollDataSource<T> extends DataSource<T> {
    * @private
    */
   disconnect() {
-    this._renderChangesSubscription?.unsubscribe();
+    if (this._renderChangesSubscription) {
+      this._renderChangesSubscription.unsubscribe();
+    }
     this._renderChangesSubscription = null;
   }
 }
