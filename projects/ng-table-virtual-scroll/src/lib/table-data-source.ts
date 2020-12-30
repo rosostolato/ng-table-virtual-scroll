@@ -40,16 +40,12 @@ export class TableVirtualScrollDataSource<T> extends DataSource<T> {
 
   protected updateChangeSubscription() {
     this.initStreams();
-    const _renderData: BehaviorSubject<T[]> = this._renderData;
-    const dataStream: Observable<T[]> = this._data;
-
-    this._renderChangesSubscription.unsubscribe();
     this._renderChangesSubscription = new Subscription();
     this._renderChangesSubscription.add(
-      dataStream.subscribe((data) => this.dataToRender$.next(data))
+      this._data.subscribe((data) => this.dataToRender$.next(data))
     );
     this._renderChangesSubscription.add(
-      this.dataOfRange$.subscribe((data) => _renderData.next(data))
+      this.dataOfRange$.subscribe((data) => this._renderData.next(data))
     );
   }
 
@@ -63,7 +59,7 @@ export class TableVirtualScrollDataSource<T> extends DataSource<T> {
 
   /**
    * Used by the MatTable. Called when it connects to the data source.
-   * @docs-private
+   * @private
    */
   connect(): Observable<T[] | readonly T[]> {
     if (!this._renderChangesSubscription) {
@@ -75,7 +71,7 @@ export class TableVirtualScrollDataSource<T> extends DataSource<T> {
 
   /**
    * Used by the MatTable. Called when it disconnects from the data source.
-   * @docs-private
+   * @private
    */
   disconnect() {
     this._renderChangesSubscription?.unsubscribe();

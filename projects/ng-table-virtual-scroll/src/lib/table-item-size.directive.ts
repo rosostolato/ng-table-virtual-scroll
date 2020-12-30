@@ -30,8 +30,8 @@ export function _tableVirtualScrollDirectiveStrategyFactory(
   return tableDir.scrollStrategy;
 }
 
-const stickyHeaderSelector = '.mat-header-row .mat-table-sticky';
-const stickyFooterSelector = '.mat-footer-row .mat-table-sticky';
+const stickyHeaderSelector = '.cdk-header-row .cdk-table-sticky';
+const stickyFooterSelector = '.cdk-footer-row .cdk-table-sticky';
 
 const defaults = {
   rowHeight: 48,
@@ -154,7 +154,7 @@ export class TableItemSizeDirective
         });
     } else {
       throw new Error(
-        '[tvsItemSize] requires TableVirtualScrollDataSource be set as [dataSource] of [mat-table]'
+        '[tvsItemSize] requires TableVirtualScrollDataSource be set as [dataSource] of [cdk-table]'
       );
     }
   }
