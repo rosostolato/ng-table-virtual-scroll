@@ -2,12 +2,12 @@
 
 An Angular Directive, which allow to use [virtual scrolling](https://material.angular.io/cdk/scrolling) in [cdk-table](https://material.angular.io/components/table)
 
+This library is a fork of [ng-table-virtual-scroll](https://github.com/diprokon/ng-table-virtual-scroll)
+
 [![npm](https://img.shields.io/badge/demo-online-ed1c46.svg)](https://diprokon.github.io/ng-table-virtual-scroll)
 [![npm](https://img.shields.io/npm/v/ng-table-virtual-scroll.svg?maxAge=2592000?style=plastic)](https://www.npmjs.com/package/ng-table-virtual-scroll)
 ![Travis (.org) branch](https://img.shields.io/travis/diprokon/ng-table-virtual-scroll/master)
 [![npm](https://img.shields.io/npm/l/express.svg?maxAge=2592000)](/LICENSE.txt)
-
-This library is a fork of [ng-table-virtual-scroll](https://github.com/diprokon/ng-table-virtual-scroll)
 
 ## Table of Contents
 
